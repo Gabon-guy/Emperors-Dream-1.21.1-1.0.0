@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "emperorsdream",
+	"version": "${version}",
+	"name": "Emperor's Dream",
+	"description": "This is my first mod!",
+	"authors": [
+		"Gabon_guy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/emperorsdream/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.gabon_guy.emperorsdream.EmperorsDream"
+		],
+		"fabric-datagen": [
+			"net.gabon_guy.emperorsdream.EmperorsDreamDataGenerator"
+		],
+		"client": [
+			"net.gabon_guy.emperorsdream.EmperorsDreamClient"
+		]
+	},
+	"mixins": [
+		"emperorsdream.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
